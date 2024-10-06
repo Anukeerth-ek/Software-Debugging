@@ -15,4 +15,7 @@ def remove_html_markup(s):
     
     return out
 
-print(remove_html_markup("<b>foo</b>"))
+print(remove_html_markup("<b>foo</b>"))   # And we got the desired result, that is foo. 
+
+# But we need to make sure that if it works for everything. And we have one on error. If we check '<a href=">"></a>' in this we will get "foo. That is not the
+# result we want so we need to add some changes to this. 
